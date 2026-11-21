@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Math Game</title>
+    <!-- Linked External CSS3 Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="game-container">
+        <header>
+            <h1>Guess The Number</h1>
+            <p class="subtitle">Pick a random number between 1 and 10</p>
+        </header>
+
+        <section class="game-area">
+            <div class="input-group">
+                <input id="guessnumber" type="number" min="1" max="10" placeholder="Enter 1 - 10" autofocus>
+                <button id="check-btn" onclick="check()">Check</button>
+            </div>
+
+            <div class="status-panel">
+                <p id="result" class="result">You are wrong/right</p>
+                <p id="totalscore" class="score-badge">score: 10</p>
+                <button id="restart-btn" class="restart-btn" onclick="restartGame()">Play Again</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Linked External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
